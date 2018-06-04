@@ -1,0 +1,39 @@
+{
+  "name": "bs-postgres",
+  "version": "0.1.0",
+  "refmt": 3,
+  "namespace": true,
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [{
+    "dir" : "src",
+    "files": [
+      "Result.ml",
+      "Query.ml",
+      "Pool.ml",
+      "Client.ml"
+    ]
+  }, {
+    "dir": "test",
+    "type": "dev",
+    "files": [
+      "Test_Postgres.ml",
+      "Test_Helpers.ml"
+    ]
+  }],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": false
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+  ],
+  "bs-dev-dependencies": [
+    "bs-chai",
+    "bs-mocha"
+  ],
+  "warnings": {
+    "error" : "+101",
+    "number": "-102"
+  },
+  "refmt": 3
+}

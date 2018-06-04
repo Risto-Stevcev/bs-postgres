@@ -1,0 +1,30 @@
+{
+  "name": "bs-postgres",
+  "version": "0.1.0",
+  "description": "Bucklescript bindings for node-postgres",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/Risto-Stevcev/bs-postgres.git"
+  },
+  "homepage": "https://github.com/Risto-Stevcev/bs-postgres",
+  "bugs": "https://github.com/Risto-Stevcev/bs-postgres/issues",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "test": "mocha lib/js/test/Test_Postgres.bs.js"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "Risto Stevcev",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {
+    "bs-chai": "^0.3.0",
+    "bs-mocha": "^0.3.0",
+    "bs-platform": "^3.1.5"
+  }
+}
