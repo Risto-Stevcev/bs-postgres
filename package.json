@@ -1,6 +1,6 @@
 {
   "name": "bs-postgres",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Bucklescript bindings for node-postgres",
   "repository": {
     "type": "git",
