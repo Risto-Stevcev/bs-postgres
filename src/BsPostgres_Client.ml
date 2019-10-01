@@ -1,3 +1,6 @@
+module Result = BsPostgres_Result
+module Query = BsPostgres_Query
+
 type t
 type config =
   < user: string Js.undefined

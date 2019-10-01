@@ -1,3 +1,4 @@
+open BsPostgres
 open BsMocha.Promise
 open Test_Helpers
 
@@ -12,7 +13,7 @@ describe "Postgres" @@ fun () -> begin
 
   and _ =
     describe "Client" @@ fun () -> begin
-      let _ = 
+      let _ =
         it "should perform a query" @@ fun () -> client |> test_query
       in
         it "should perform a query using a query object" @@ fun () -> client |> test_query_object

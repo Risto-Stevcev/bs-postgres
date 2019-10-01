@@ -7,10 +7,11 @@
   "sources": [{
     "dir" : "src",
     "files": [
-      "Result.ml",
-      "Query.ml",
-      "Pool.ml",
-      "Client.ml"
+      "BsPostgres.ml",
+      "BsPostgres_Result.ml",
+      "BsPostgres_Query.ml",
+      "BsPostgres_Pool.ml",
+      "BsPostgres_Client.ml"
     ]
   }, {
     "dir": "test",

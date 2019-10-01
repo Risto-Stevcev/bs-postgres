@@ -1,3 +1,4 @@
+open BsPostgres
 open BsChai.Expect.Expect
 open BsChai.Expect.Combos.End
 open Client.Promise

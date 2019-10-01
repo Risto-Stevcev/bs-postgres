@@ -1,3 +1,6 @@
+module Client = BsPostgres_Client
+module Result = BsPostgres_Result
+
 type t
 type config =
   < user: string Js.undefined
@@ -50,8 +53,8 @@ module Callback = struct
   external on:
     t ->
     ([ `connect of Client.t -> unit
-     | `acquire of Client.t -> unit 
-     | `error   of Js.Exn.t -> Client.t -> unit 
+     | `acquire of Client.t -> unit
+     | `error   of Js.Exn.t -> Client.t -> unit
      | `remove  of Client.t -> unit
      ] [@bs.string]) ->
     unit = "" [@@bs.send]
